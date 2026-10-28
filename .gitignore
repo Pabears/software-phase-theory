@@ -1,0 +1,16 @@
+# 第三方文献版权隔离（Copyright Quarantine）
+# 第三方论文/白皮书全文 PDF/HTML/EPUB 一律不入库，仅保留题录索引与官方直链
+*.pdf
+*.html
+*.epub
+papers/**/*.pdf
+papers/**/*.html
+papers/**/*.epub
+
+# 保留题录索引与拉取脚本
+!papers/README.md
+!papers/**/README.md
+!papers/download_papers.sh
+
+# 系统与编辑器杂物
+.DS_Store
