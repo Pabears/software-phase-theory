@@ -3,7 +3,7 @@
 
 *What software actually needs an LLM? A "diagnose the phase before touching the code" methodology — and its executable form, the `ask-shiheng` skill.*
 
-> **作者 / Author**：时恒 (Shiheng) · **协议 / License**：[CC BY-SA 4.0](./LICENSE) · **版本 / Version**：v1.0.0
+> **作者 / Author**：时恒 (Shiheng) · **协议 / License**：[CC BY-SA 4.0](./LICENSE) · **版本 / Version**：v1.1.0
 
 ---
 
@@ -26,11 +26,21 @@ Software Phase Theory places every module into a three-dimensional causal phase 
 
 ## 📦 安装 / Install（一行命令 / One-liner）
 
-```bash
-git clone https://github.com/<your-account>/software_phase_theory.git
-cd software_phase_theory
+### DeepSeek Harness (DSH) —— 插件式安装（推荐）
 
-# DeepSeek Harness (DSH)
+```bash
+# 以 bundle 形式安装：ask-shiheng 与 ask-shiheng-en 两个语种的 Skill
+# 会直接挂进宿主技能目录，随插件卸载/更新自动清理
+dsh plugin add github:Pabears/software-phase-theory
+```
+
+### 通用 SKILL.md 宿主 —— 符号链接安装
+
+```bash
+git clone https://github.com/Pabears/software-phase-theory.git
+cd software-phase-theory
+
+# DeepSeek Harness (DSH)，符号链接方式
 ln -s "$PWD/skills/ask-shiheng" ~/.dsh/skills/ask-shiheng
 
 # Claude Code

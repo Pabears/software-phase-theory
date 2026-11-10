@@ -1,0 +1,9 @@
+# ask-shiheng bundle patch: mounts the ask-shiheng pre-coding architecture
+# triage skill into a DSH profile layer stack.
+#
+# The skill bodies are static and read from the package at load time, so the
+# row needs no runtime config. Users can disable the skill by removing this
+# row in their profile patch.
+- insert:
+    - id: ask-shiheng
+      name: '@pabears/dsh-ask-shiheng'

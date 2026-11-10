@@ -3,6 +3,17 @@
 本文件遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/) 与 [语义化版本](https://semver.org/lang/zh-CN/) 规范。
 All notable changes to this project are documented in this file.
 
+## [1.1.0] - 2026-11-10
+
+### Added
+
+- **Added**：DSH bundle 薄包装（`package.json` + `cordis.patch.yml` + `dsh/index.js`）——仓库现在可直接作为 DeepSeek Harness 插件安装：`dsh plugin add github:Pabears/software-phase-theory`。包装层通过官方 `ctx.skills.register` 契约把两个语种的 Skill 挂进宿主：`ask-shiheng`（中文为主）与 `ask-shiheng-en`（英文版），卸载/重载时由宿主自动注销，无残留。
+- **Added**：`engines.dsh` 声明 `>=0.2.1-rc.3 <0.4.0`（与 dshbase 已收录验证插件的版本区间一致）；纯 JS 零构建，无 `prepare` 脚本，安装无需 build 授权。
+
+### Changed
+
+- **Changed**：README 安装章节补充 DSH bundle 一行装法（原符号链接装法保留，供跨宿主使用）。
+
 ## [1.0.0] - 2026-10-28
 
 ### 首次公开发布（Initial Public Release）

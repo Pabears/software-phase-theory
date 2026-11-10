@@ -1,0 +1,46 @@
+{
+  "name": "@pabears/dsh-ask-shiheng",
+  "version": "1.1.0",
+  "description": "DSH bundle: mounts the ask-shiheng pre-coding architecture triage skill (Software Phase Theory / 软件物态学) into DeepSeek Harness.",
+  "type": "module",
+  "main": "dsh/index.js",
+  "exports": {
+    ".": "./dsh/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dsh",
+    "skills",
+    "en",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.3 <0.4.0"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "skill",
+    "software-architecture",
+    "software-phase-theory",
+    "agent"
+  ],
+  "license": "CC-BY-SA-4.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pabears/software-phase-theory.git"
+  },
+  "homepage": "https://github.com/Pabears/software-phase-theory#readme",
+  "bugs": {
+    "url": "https://github.com/Pabears/software-phase-theory/issues"
+  }
+}
